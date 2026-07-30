@@ -5,23 +5,23 @@
 class AgentManager < Formula
   desc "Terminal UI to manage AI coding-agent tmux sessions"
   homepage "https://github.com/YoanWai/agent-manager"
-  version "0.10.4"
+  version "0.10.5"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.4/agent-manager_0.10.4_darwin_amd64.tar.gz"
-      sha256 "c74865b2ecd29eb25981e428298644c8e84327e4c0f3f1c1ca5638aaf9b6d4aa"
+      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.5/agent-manager_0.10.5_darwin_amd64.tar.gz"
+      sha256 "793d63a9451aa37f837bf63979d940455be43e1c8ccbca6bf62be21f990668f5"
 
       define_method(:install) do
         bin.install "agent-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.4/agent-manager_0.10.4_darwin_arm64.tar.gz"
-      sha256 "d11817dc3a444e44667151cb50777b11247016cc5919bb2b6b4ae66d96673e77"
+      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.5/agent-manager_0.10.5_darwin_arm64.tar.gz"
+      sha256 "473c7322521b906f1344bfdb8f701d2d795bd5bd1fc06334c3cf0f66174acac3"
 
       define_method(:install) do
         bin.install "agent-manager"
@@ -31,15 +31,15 @@ class AgentManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.4/agent-manager_0.10.4_linux_amd64.tar.gz"
-      sha256 "54c4824cfcaf5bd15695ec6259ea0535d985e54d33d36c21f7a38c430fe6bbd3"
+      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.5/agent-manager_0.10.5_linux_amd64.tar.gz"
+      sha256 "85fb0a4b409cc261fb536742413b1cc1ca9f94903d174b3919546c55acf2546a"
       define_method(:install) do
         bin.install "agent-manager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.4/agent-manager_0.10.4_linux_arm64.tar.gz"
-      sha256 "8f04403bee31d06a039a83e41d34f7fec65a35ffbdb9b672682d13fc8c2ce53e"
+      url "https://github.com/YoanWai/agent-manager/releases/download/v0.10.5/agent-manager_0.10.5_linux_arm64.tar.gz"
+      sha256 "3b0fce7326aa3cbe9d9711c5a7bc152b7aa36102612e0fd8271c5d8768dea64c"
       define_method(:install) do
         bin.install "agent-manager"
       end
