@@ -6,32 +6,32 @@ cask "agent-manager" do
     end
   end
 
-  version "0.39.0"
+  version "0.40.0"
 
   on_macos do
     on_arm do
-      sha256 "0e46ed5b6a2755a234ebed2fb680a0052186f3fb2b6410340255b7ddfccf6250"
+      sha256 "c9a9eb629a5db59d969aebde34f3f3648fd65bcb9b4431472c6dd7f3662a8293"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "4122a4913708da21d87afccd3535877dc7e4725c54b5d6f052168024dc704df7"
+      sha256 "c7d7b1b48a25b08c9a88c04de71499485682f7bf0cbba5a7ff10e93e294125c2"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0a0b07fbde84207c037d248f86f4ee6c113403dc696c5c495e376860e6244c9b"
+      sha256 "e7f05258cda6545af0705b9d45512d5c773d37e42ea96591ebaa2a4df7419d9c"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "6be7d7e5e181ee6f38f8ad9e0be178fca95773a9250261ccd99ecc4911893c72"
+      sha256 "c0da5b8c323e3afdb020aad997cd1f667eb77ee47d1dd85bcbb51447d8da7fae"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_amd64.tar.gz"
     end
   end
 
   name "agent-manager"
-  desc "Terminal UI to manage AI coding-agent tmux sessions"
-  homepage "https://github.com/YoanWai/agent-manager"
+  desc "Run Claude Code, Codex, OpenCode and other AI coding agents in tmux"
+  homepage "https://agent-manager.dev/"
 
   livecheck do
     skip "Auto-generated on release."
