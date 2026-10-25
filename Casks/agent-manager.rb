@@ -6,25 +6,25 @@ cask "agent-manager" do
     end
   end
 
-  version "0.43.2"
+  version "0.44.0"
 
   on_macos do
     on_arm do
-      sha256 "9dd3df944955fa2cf2d36d8ecf158512a2a56da93f4a351a30cbdf411d27d8c1"
+      sha256 "274fc7d4beb5c0587fff09f84d0517d2b90253a9b2f2d63917ffeff748f97380"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "1fa654786328b97afa98323a9abdb2cac4b59592e5af95d528d1a7497050b1b3"
+      sha256 "38bcfaaded36a1d8c1d7c8749e2feab432b7739c9e8ebbe2e945d3c42fe8a433"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "3b412b15e5001237cd3c698d2801246312a78a2b312c16ecf66349e1a4420f88"
+      sha256 "1cd10be86a2be5e5ffd5aa37310bf4c3c81d95c629f406a3c9ab10119b122b14"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0f58882c2c567082c70823e55d5f2c8b8eb8f1b3cc13aecbbdf7c2ed6c91b2b1"
+      sha256 "ae5d688db94b1703054141d57d7614de29e457fb4b5b283b4a032fd4481dbdb2"
       url "https://github.com/YoanWai/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_amd64.tar.gz"
     end
   end
