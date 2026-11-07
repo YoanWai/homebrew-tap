@@ -6,25 +6,25 @@ cask "agent-manager" do
     end
   end
 
-  version "0.47.1"
+  version "0.48.0"
 
   on_macos do
     on_arm do
-      sha256 "e1c472e4e313606aba6bcfac202b307f997406c2fa830bc7d4e7cf42d87ea234"
+      sha256 "2c7d560bd471dafb43498caf5391599efa92dedf2620284bfbcb449a0dd714fe"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e409f938770fcaee0a890d77b080b2acac39b0919e357e7533cf6fbe022b4f24"
+      sha256 "b485348c48ccaef9b0a3787f499f088413b1642207d8dd27d286314d63654c6e"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "28ff4d1ca5bc2c338c09bccdaea6aa72a53806da5059cb24235940116a6b6e3b"
+      sha256 "be97cea1f9a5a6d265e2140248c70f81ef45098de469a43106a56c3ab0e2d97f"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "d2b17c9b3fe0d26602be9f66cf5d42f20997f2bbb410c05509e4f68abec3ed53"
+      sha256 "7d42ab5fdd9ff60b2a54a345908fdb32bf6c788c91d76c6c8fad61d8d3e73f3e"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -42,5 +42,5 @@ cask "agent-manager" do
 
   binary "agent-manager"
 
-  # No zap stanza required
+  zap :not_required
 end
