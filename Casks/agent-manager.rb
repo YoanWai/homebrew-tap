@@ -6,25 +6,25 @@ cask "agent-manager" do
     end
   end
 
-  version "0.48.0"
+  version "0.48.1"
 
   on_macos do
     on_arm do
-      sha256 "2c7d560bd471dafb43498caf5391599efa92dedf2620284bfbcb449a0dd714fe"
+      sha256 "c995de8dfd42b0eafb5b2f5c19963ad20258982acefb4bec29c112e54a99bb93"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b485348c48ccaef9b0a3787f499f088413b1642207d8dd27d286314d63654c6e"
+      sha256 "6e5efbf203db257faff5f5d22c3169e73db8173f5c96c2c5a6c37376ea9ac6b7"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "be97cea1f9a5a6d265e2140248c70f81ef45098de469a43106a56c3ab0e2d97f"
+      sha256 "fc762b32a68e12a253f2256f7393607f81f2e7c803e353558830d91b85a7d0ba"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7d42ab5fdd9ff60b2a54a345908fdb32bf6c788c91d76c6c8fad61d8d3e73f3e"
+      sha256 "8925bc17cea42cd8e3fb6db451099f338542d746a7d2eed24aad91b30314656d"
       url "https://github.com/wainmann/agent-manager/releases/download/v#{version}/agent-manager_#{version}_linux_amd64.tar.gz"
     end
   end
